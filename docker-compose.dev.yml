@@ -1,6 +1,8 @@
 version: "3.8"
 services:
     app:
+        environment:
+            - SVELTE_APP_DOCKER_RUN=true
         container_name: svelte-todo-dev
         build:
             context: .
